@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net472</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+	<LangVersion>10</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Chat_tacular\ImageBase.cs" />
+    <Compile Remove="Chat_tacular\Setting2.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Chat_tacular\bluepane.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="Chat_tacular\ImageBase.xaml" />
+    <Page Remove="Chat_tacular\Setting2.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="TwitchLib" Version="3.5.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Twitchbot Core">
+      <HintPath>..\chat-tacular\bin\Debug\net472\Twitchbot Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Chat_tacular\bluepane.png" />
+  </ItemGroup>
+
+</Project>

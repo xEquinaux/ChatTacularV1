@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window x:Class="Chat_tacular.ImageBase" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:Chat_tacular" Title="Chat-tacular" Height="450" Width="300" ResizeMode="CanResize" SizeChanged="Window_SizeChanged" Closing="Window_Closing" Loaded="Window_Loaded">
+  <Grid Name="grid_main">
+    <Rectangle Name="bg_color" />
+    <Image Name="bg_image" Visibility="Hidden" Margin="-16,-16,0,0" HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="292" Cursor="None" Stretch="UniformToFill" />
+    <Image Name="matte_image" Visibility="Hidden" Margin="-16,-16,0,0" HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="292" Stretch="UniformToFill" Cursor="None" />
+    <MediaElement Name="bg_media" Visibility="Hidden" Margin="-12,-12,0,0" HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" LoadedBehavior="Manual" UnloadedBehavior="Manual" />
+    <RichTextBox Name="image_backing" BorderThickness="0" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="272" IsReadOnly="True" IsReadOnlyCaretVisible="False" FontSize="16" Foreground="#FFFFFFFF" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" SelectionOpacity="0" BorderBrush="{x:Null}" SelectionBrush="{x:Null}">
+      <Control.Background>
+        <ImageBrush x:Name="bg_bluepane" ImageSource="/Chat_tacular/bluepane.png" Stretch="None" />
+      </Control.Background>
+    </RichTextBox>
+    <RichTextBox Name="richtextbox_bg" BorderThickness="0" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="272" IsReadOnly="True" IsReadOnlyCaretVisible="False" FontSize="16" Foreground="#FFFFFFFF" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" SelectionOpacity="0" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Background="{x:Null}">
+      <FlowDocument>
+        <Paragraph Name="text_chat_bg" Margin="0,15,0,15" LineHeight="0.15" />
+      </FlowDocument>
+    </RichTextBox>
+    <RichTextBox Name="text_outline1" BorderThickness="0" HorizontalAlignment="Left" Height="399" Margin="8,8,0,0" VerticalAlignment="Top" Width="272" IsReadOnly="True" IsReadOnlyCaretVisible="False" FontSize="16" Foreground="#FFFFFFFF" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" SelectionOpacity="0" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Background="{x:Null}">
+      <FlowDocument>
+        <Paragraph Name="text_chat_outline1" Margin="0,15,0,15" LineHeight="0.15" />
+      </FlowDocument>
+    </RichTextBox>
+    <RichTextBox Name="text_outline2" BorderThickness="0" HorizontalAlignment="Left" Height="399" Margin="10,8,0,0" VerticalAlignment="Top" Width="272" IsReadOnly="True" IsReadOnlyCaretVisible="False" FontSize="16" Foreground="#FFFFFFFF" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" SelectionOpacity="0" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Background="{x:Null}">
+      <FlowDocument>
+        <Paragraph Name="text_chat_outline2" Margin="0,15,0,15" LineHeight="0.15" />
+      </FlowDocument>
+    </RichTextBox>
+    <RichTextBox Name="text_outline3" BorderThickness="0" HorizontalAlignment="Left" Height="399" Margin="12,8,0,0" VerticalAlignment="Top" Width="272" IsReadOnly="True" IsReadOnlyCaretVisible="False" FontSize="16" Foreground="#FFFFFFFF" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" SelectionOpacity="0" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Background="{x:Null}">
+      <FlowDocument>
+        <Paragraph Name="text_chat_outline3" Margin="0,15,0,15" LineHeight="0.15" />
+      </FlowDocument>
+    </RichTextBox>
+    <RichTextBox Name="text_outline4" BorderThickness="0" HorizontalAlignment="Left" Height="399" Margin="8,12,0,0" VerticalAlignment="Top" Width="272" IsReadOnly="True" IsReadOnlyCaretVisible="False" FontSize="16" Foreground="#FFFFFFFF" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" SelectionOpacity="0" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Background="{x:Null}">
+      <FlowDocument>
+        <Paragraph Name="text_chat_outline4" Margin="0,15,0,15" LineHeight="0.15" />
+      </FlowDocument>
+    </RichTextBox>
+    <RichTextBox Name="text_outline5" BorderThickness="0" HorizontalAlignment="Left" Height="399" Margin="10,12,0,0" VerticalAlignment="Top" Width="272" IsReadOnly="True" IsReadOnlyCaretVisible="False" FontSize="16" Foreground="#FFFFFFFF" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" SelectionOpacity="0" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Background="{x:Null}">
+      <FlowDocument>
+        <Paragraph Name="text_chat_outline5" Margin="0,15,0,15" LineHeight="0.15" />
+      </FlowDocument>
+    </RichTextBox>
+    <RichTextBox Name="text_outline6" BorderThickness="0" HorizontalAlignment="Left" Height="399" Margin="12,12,0,0" VerticalAlignment="Top" Width="272" IsReadOnly="True" IsReadOnlyCaretVisible="False" FontSize="16" Foreground="#FFFFFFFF" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" SelectionOpacity="0" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Background="{x:Null}">
+      <FlowDocument>
+        <Paragraph Name="text_chat_outline6" Margin="0,15,0,15" LineHeight="0.15" />
+      </FlowDocument>
+    </RichTextBox>
+    <RichTextBox Name="richtextbox" BorderThickness="0" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="272" IsReadOnly="True" IsReadOnlyCaretVisible="False" FontSize="16" Foreground="#FFFFFFFF" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" SelectionOpacity="0" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="{x:Null}">
+      <FlowDocument>
+        <Paragraph Name="text_chat" Margin="0,15,0,15" LineHeight="0.15" />
+      </FlowDocument>
+    </RichTextBox>
+  </Grid>
+</Window>
